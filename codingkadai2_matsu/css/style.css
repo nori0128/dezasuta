@@ -27,7 +27,7 @@ li {
 a {
   /*下線を消す*/
   text-decoration: none;
- 
+
   color: inherit;
 }
 
@@ -42,86 +42,82 @@ img {
   border: none;
 }
 
- /*ここから課題*/
+/*ここから課題*/
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 960px;
-    margin: 20px auto;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 20px auto;
+}
 
 .nav {
-    display: flex;
-  }
-  
+  display: flex;
+}
+
 .nav-item {
-    padding: 5px 30px;
-    border-right: 1px solid black;
-  }
+  padding: 5px 30px;
+  border-right: 1px solid black;
+}
 
 .nav-item:last-child {
-    padding-right: 0;
-    border-right: none;
-  }
-
+  padding-right: 0;
+  border-right: none;
+}
 
 .bluebox {
-    display: flex;
-    justify-content: space-between;
-    max-width: 960px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .bluebox div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 31%;
-    height: 300px;
-    background-color: blue;
-    color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+  height: 300px;
+  background-color: blue;
+  color: #fff;
 }
 
 .redbox {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    list-style: none;
-    max-width: 960px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .redbox div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 31%;
-    height: 300px;
-    margin-top: 20px;
-    background-color: red;
-    color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+  height: 300px;
+  margin-top: 20px;
+  background-color: red;
+  color: #fff;
 }
 
 @media screen and (max-width: 767px) {
-    
-.header {
-      display: block;
-      padding: 10px;
+  .header {
+    display: block;
+    padding: 10px;
+  }
+
+  .nav {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-item {
+    padding: 0;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
 }
-  
-    
-.nav {
-      display: block;
-      width: 100%;
-      margin-top: 10px;
-}
-  
-.nav-item {
-      padding: 0;
-      border-right: none;
-      border-bottom: 1px solid black;
-}
-}
-  
