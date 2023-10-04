@@ -39,14 +39,15 @@
 
     <script>
         let num = 0;
-        for (let i = 0; i >= 10; i++) {
+        for (let i = 0; i <= 10; i++) {
             num = num + i;
-            if (num >= 20) {
-                console.log('20以上');
-            } else {
-                console.log('20未満');
-            }
         }
+        if (num >= 20) {
+            console.log('20以上');
+        } else {
+            console.log('20未満');
+        }
+
     </script>
 </body>
 
