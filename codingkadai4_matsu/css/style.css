@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #4f260b;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/*全体*/
+main {
+  background-color: #e8d9bf;
+}
+
+/*ヘッダー*/
+.header_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 7% 0 3%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header_log {
+  width: 226px;
+}
+
+.pc_nav ul {
+  display: flex;
+}
+
+.pc_nav ul li {
+  width: 105px;
+  margin-left: 55px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+/*リード文*/
+.lead {
+  text-align: center;
+}
+
+.lead-en {
+  font-size: 30px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.lead-ja {
+  font-size: 82px;
+  line-height: 120%;
+}
+
+.lead-text {
+  font-size: 23px;
+  padding-top: 30px;
+  line-height: normal;
+}
+
+/*私たちについて*/
+.about {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 0;
+}
+
+.about-img {
+  border-bottom-right-radius: 80px;
+}
+
+.about-body {
+  padding-left: 85px;
+}
+
+.about-body h2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 270px;
+}
+
+.about-message {
+  width: 500px;
+  font-size: 44px;
+  font-feature-settings: "palt";
+  padding-bottom: 25px;
+  line-height: 60px;
+}
+
+.about-text {
+  font-size: 16px;
+  font-feature-settings: "palt";
+  line-height: normal;
+  text-align: justify;
+  width: 410px;
+}
+
+/*メニュー*/
+.menu {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.menu h2 {
+  width: 150px;
+  margin: 0 auto 40px;
+  padding-top: 80px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  width: 30%;
+}
+
+.menu-item img {
+  width: 100%;
+  border-top-right-radius: 40px;
+}
+
+.menu-item h3 {
+  margin-top: -10px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  font-size: 38px;
+  font-weight: normal;
+  color: #d30202;
+}
+
+.menu-list p {
+  font-size: 17px;
+  text-align: justify;
+  line-height: normal;
+}
+
+/*ギャラリー*/
+.gallery h2 {
+  width: 250px;
+  margin: 0 auto 40px;
+  padding-top: 80px;
+}
+
+.gallery ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery li {
+  width: 30%;
+}
+
+/*インベント*/
+.event {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.event h2 {
+  width: 180px;
+  margin: 0 auto 40px;
+  padding-top: 80px;
+}
+
+.event-text {
+  display: flex;
+  justify-content: center;
+  padding: 36px;
+  border: 3px solid #4f260b;
+  background: #fff;
+}
+
+.event-text ul {
+  font-size: 23px;
+  line-height: normal;
+}
+
+.event-text ul li {
+  margin-top: 10px;
+  line-height: normal;
+}
+
+.event-text ul li time {
+  margin-right: 20px;
+}
+
+.event-text ul li a {
+  display: inline-block;
+  width: 515px;
+  white-space: nowrap;
+  text-decoration: underline;
+}
+
+/*アクセス*/
+.access h2 {
+  width: 220px;
+  margin: 0 auto 40px;
+  padding-top: 80px;
+}
+
+.access-map iframe {
+  display: block;
+  width: 100%;
+  height: 470px;
+}
+
+/*ページトップ*/
+.pagetop {
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+  width: 100px;
+}
+
+/*フッター*/
+footer {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.footer-block {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+
+.footer-logo {
+  width: 230px;
+  margin-right: 60px;
+  margin-left: 10px;
+}
+
+.footer-block p {
+  color: #000;
+  font-size: 20px;
+  line-height: normal;
+}
+
+.footer-copy {
+  text-align: center;
+}
+
+.footer-copy small {
+  color: #000;
+  font-size: 16px;
+}
