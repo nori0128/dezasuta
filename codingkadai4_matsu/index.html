@@ -6,24 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デザインカフェ</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="第4回課題です">
+    <meta name="description" content="第4回・5回課題です">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
 
     <header id="header">
         <div class="header_slider">
+            <div>
+                <picture>
+                    <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width: 767px)">
+                    <img src="images/pc_first-100.jpg" alt="デザインカフェ　店内の様
+            子">
+                </picture>
+            </div>
             <div><img src="images/pc_first-100.jpg" alt="店内の様子"></div>
         </div>
         <div class="header_wrap">
             <h1 class="header_logo"><img src="images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE"></h1>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">GALLERY</a></li>
-                    <li><a href="">EVENT</a></li>
-                    <li><a href="">ACCESS</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,7 +59,7 @@
         </div>
 
         <section id="about" class="about">
-            <img src="images/pc_about-100.jpg" alt="コーヒーカップ" class="about-img">
+            <div class="about-img"><img src="images/pc_about-100.jpg" alt="コーヒーカップ"></div>
             <div class="about-body">
                 <h2>
                     <img src="images/about_us@2x.png" alt="ABOUT US">
@@ -83,18 +101,18 @@
 
         <section id="gallery" class="gallery">
             <h2><img src="images/gallery@2x.png" alt="GALLERY"></h2>
-            <ul>
-                <li><img src="images/pc_gallary_05-100.jpg" alt="店内">
-                </li>
-                <li><img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆">
-                </li>
-                <li><img src="images/mobile_gallery-100.jpg" alt="内装">
-                </li>
-                <li><img src="images/pc_gallary_02-100.jpg" alt="カフェ看板">
-                </li>
-                <li><img src="images/pc_gallary_01-100.jpg" alt="カフェラテ">
-                </li>
-            </ul>
+            <div class="gallery-slider">
+                <div><img src="images/pc_gallary_05-100.jpg" alt="店内">
+                </div>
+                <div><img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆">
+                </div>
+                <div><img src="images/pc_gallary_03-100.jpg" alt="内装">
+                </div>
+                <div><img src="images/pc_gallary_02-100.jpg" alt="カフェ看板">
+                </div>
+                <div><img src="images/pc_gallary_01-100.jpg" alt="カフェラテ">
+                </div>
+            </div>
         </section>
 
         <section id="event" class="event">
@@ -110,7 +128,7 @@
                         <a href="">春の新商品新発売。話題のあのブランドとコラボ</a>
                     </li>
                     <li>
-                        <time datetime="2020-02.06">2020.02.06</time>
+                        <time datetime="2020-02-06">2020.02.06</time>
                         <a href="">コーヒーの日で30％OFFイベントを開催［3日間限定］</a>
                     </li>
                 </ul>
@@ -121,9 +139,9 @@
             <h2><img src="images/access@2x.png" alt="ACCESS"></h2>
             <div class="access-map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6484.139614307143!2d139.69904844094063!3d35.65065170851804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b44e6cacbeb%3A0x566d8bd2a5a20a2!2z44CSMTUwLTAwMzQg5p2x5Lqs6YO95riL6LC35Yy65Luj5a6Y5bGx55S6!5e0!3m2!1sja!2sjp!4v1696771429988!5m2!1sja!2sjp"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6484.139614307144!2d139.6990484409406!3d35.650651708518026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b44e6cacbeb%3A0x566d8bd2a5a20a2!2z44CSMTUwLTAwMzQg5p2x5Lqs6YO95riL6LC35Yy65Luj5a6Y5bGx55S6!5e0!3m2!1sja!2sjp!4v1698076301157!5m2!1sja!2sjp"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
@@ -149,6 +167,18 @@
         </footer>
 
     </main>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+
+            $('.sp_btn, .sp_nav ul li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            });
+        });
+    </script>
+
 </body>
 
 </html>
