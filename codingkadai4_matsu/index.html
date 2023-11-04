@@ -117,17 +117,18 @@
         <section id="gallery" class="gallery">
             <h2><img src="images/gallery@2x.png" alt="GALLERY"></h2>
             <div class="gallery-slider">
-                <div class="gallery-slider-sp-img"><img src="images/pc_gallary_05-100.jpg" alt="店内">
+                <div><img src="images/pc_gallary_05-100.jpg" alt="店内">
+                </div>
+                <div><img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆">
+                </div>
+                <div><img src="images/pc_gallary_03-100.jpg" alt="内装">
+                </div>
+                <div><img src="images/pc_gallary_02-100.jpg" alt="カフェ看板">
+                </div>
+                <div><img src="images/pc_gallary_01-100.jpg" alt="カフェラテ">
                 </div>
                 <div class="gallery-slider-sp"><img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆">
                 </div>
-                <div class="gallery-slider-sp"><img src="images/pc_gallary_03-100.jpg" alt="内装">
-                </div>
-                <div class="gallery-slider-sp"><img src="images/pc_gallary_02-100.jpg" alt="カフェ看板">
-                </div>
-                <div class="gallery-slider-sp"><img src="images/pc_gallary_01-100.jpg" alt="カフェラテ">
-                </div>
-            </div>
         </section>
 
         <section id="event" class="event">
@@ -201,10 +202,22 @@
 
             $('.gallery-slider').slick({
                 autoplaySpeed: 2000,
-                dots: true,
-                arrows: false,
-            });
+                autoplay: true,
+                dots: false,
+                arrows: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                isFinite: true,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
 
+                }]
+            });
         });
     </script>
 
