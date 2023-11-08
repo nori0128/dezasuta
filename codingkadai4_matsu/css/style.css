@@ -591,23 +591,23 @@ footer {
     display: none;
   }
   .slick-prev {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-top: 4px solid #fff;
     border-right: 4px solid #fff;
     left: 400px;
     left: 20%;
-    transform: rotate(-135deg);
+    transform: translate(0, -50%) rotate(-135deg);
     z-index: 1;
   }
   .slick-next {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-top: 4px solid #fff;
     border-right: 4px solid #fff;
     right: 400px;
     right: 20%;
-    transform: rotate(45deg);
+    transform: translate(0, -50%) rotate(45deg);
     z-index: 1;
   }
 
