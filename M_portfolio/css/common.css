@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #433430;
+  font-family: "source-han-sans-japanese", sans-serif;
+  font-feature-settings: "palt";
+  font-weight: 700;
+  font-style: normal;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #f2f2f2;
+}
+.wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  width: 120px;
+  height: 155px;
+  padding-top: 65px;
+  padding-left: 7px;
+}
+nav {
+  position: fixed;
+  width: 135px;
+  height: 100vh;
+  background: #9ab28e;
+}
+nav ul {
+  padding-top: 50px;
+  list-style: none;
+}
+nav ul li {
+  color: #fff;
+  text-align: center;
+  margin: 50px auto;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+.nav > ul > li a:hover,
+.nav > ul > li .accordion-trigger:hover {
+  color: #433430;
+}
+.accordion-trigger {
+  color: #fff;
+  font-family: "source-han-sans-japanese", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  background: none;
+  border: none;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.nav > ul > li .accordion-panel {
+  width: 170px;
+  border-top: 1px solid #fff;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  z-index: 1;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.nav > ul > li .accordion-panel.close {
+  opacity: 0;
+  visibility: hidden;
+}
+.nav > ul > li .accordion-panel li {
+  border-bottom: 1px solid #fff;
+}
+.nav > ul > li .accordion-panel li a {
+  display: block;
+  padding: 0.75em 0;
+}

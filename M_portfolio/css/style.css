@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.wrapper {
+  background: #f2f2f2;
+}
+.nav {
+  background: rgba(154, 178, 142, 0.9);
+}
+.main {
+  display: flex;
+  justify-content: flex-start;
+  height: 100vh;
+}
+.main img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
