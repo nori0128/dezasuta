@@ -1,4 +1,4 @@
-//gnavi
+/*gnavi*/
 const triggers = document.querySelectorAll('.accordion-trigger');
 triggers.forEach((trigger) => {
   const dataPanel = trigger.dataset.panel;

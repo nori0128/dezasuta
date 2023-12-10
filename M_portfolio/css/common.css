@@ -43,11 +43,14 @@ ul {
   list-style: none;
 }
 
+/*全体*/
 body {
   padding: 0;
   margin: 0;
   background: #f2f2f2;
 }
+
+/*ナビ*/
 .wrapper {
   position: relative;
   max-width: 1200px;
