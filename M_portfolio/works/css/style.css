@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.main {
+  margin-left: 120px;
+  min-height: 100vh;
+  padding: 100px 100px 0 100px;
+  margin-left: 280px;
+}
+.works-text p {
+  padding: 15px 0 10px 45px;
+  font-size: 16px;
+  font-feature-settings: "palt";
+  line-height: 1.6;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  padding: 1rem 2rem;
+  border-left: 10px solid #9ab28e;
+}
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.works-list-col3::after {
+  content: "";
+  display: block;
+  width: 28%;
+}
+.works-list li {
+  padding-bottom: 30px;
+}
+.works-list img {
+  width: 309px;
+}
+.works-photo {
+  background-color: #fff;
+  width: 309px;
+}
+.works-photo img {
+  width: 136px;
+  padding-left: 86px;
+}

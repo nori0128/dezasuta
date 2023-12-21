@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-  opacity: 0.5;
+  color: #433430;
 }
 
 ul {
@@ -56,30 +56,27 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-.logo {
+.logo img {
   width: 120px;
-  height: 155px;
   padding-top: 65px;
   padding-left: 7px;
 }
-nav {
+.nav {
   position: fixed;
   width: 135px;
   height: 100vh;
   background: #9ab28e;
 }
-nav ul {
-  padding-top: 50px;
+.nav ul {
   list-style: none;
 }
-nav ul li {
+.nav ul li {
   color: #fff;
   text-align: center;
   margin: 50px auto;
   font-size: 18px;
   letter-spacing: 0.1em;
 }
-
 .nav > ul > li a:hover,
 .nav > ul > li .accordion-trigger:hover {
   color: #433430;
@@ -98,24 +95,10 @@ nav ul li {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.nav > ul > li .accordion-panel {
-  width: 170px;
-  border-top: 1px solid #fff;
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 50%;
-  z-index: 1;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+.works-menu {
+  display: none;
 }
-.nav > ul > li .accordion-panel.close {
-  opacity: 0;
-  visibility: hidden;
-}
-.nav > ul > li .accordion-panel li {
-  border-bottom: 1px solid #fff;
-}
-.nav > ul > li .accordion-panel li a {
-  display: block;
-  padding: 0.75em 0;
+.footer-copy {
+  position: fixed;
+  bottom: 0;
 }

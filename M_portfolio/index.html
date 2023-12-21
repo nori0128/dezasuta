@@ -8,49 +8,40 @@
     <meta name="description" content="ポートフォリオサイト">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/base.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
         <nav class="nav">
-            <img src="img/logo.png" alt="ロゴ" class="logo">
+            <div class="logo"><a href="index.html"><img src="img/logo.webp" alt="ロゴ"></a></div>
             <ul>
                 <li>
                     <button class="accordion-trigger" aria-label="Worksメニュー"
                         data-panel="accordion-panel_02">Works</button>
-                    <ul class="accordion-panel close">
-                        <li><a href="">Design</a></li>
-                        <li><a href="">Photo</a></li>
+                    <ul class="works-menu">
+                        <li><a href="works/index.html">Design</a></li>
+                        <li><a href="works/work1.html">Photo</a></li>
                     </ul>
                 </li>
-                <li>
-                    <button class="accordion-trigger open" aria-label="Worksメニュー"
-                        data-panel="accordion-panel_02">Works</button>
-                    <ul class="accordion-panel">
-                        <li><a href="">Design</a></li>
-                        <li><a href="">Photo</a></li>
-                    </ul>
-                </li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="about/index.html">About</a></li>
+                <li><a href="contact/index.html">Contact</a></li>
             </ul>
         </nav>
+
     </div>
     <main class="main">
-        <img src="img/pc_top.png" alt="top">
+        <img src="img/pc_top.webp" alt="top">
+
+
+        <footer>
+            <div class="footer-copy">
+                <small>© MATSUMOTO PORTFOLIO</small>
+            </div>
+        </footer>
     </main>
 
-    <script>
-        (function (d) {
-            var config = {
-                kitId: 'gxy8vbq',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
