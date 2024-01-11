@@ -14,3 +14,48 @@ $(function(){
   });
 });
 
+
+//スクロールした際の動きを関数でまとめる
+function PageTopAnime() {
+	var scroll = $(window).scrollTop();
+	if (scroll >= 200){//上から200pxスクロールしたら
+		$('#pagetop').removeClass('DownMove');//#pagetopについているDownMoveというクラス名を除く
+		$('#pagetop').addClass('UpMove');//#pagetopについているUpMoveというクラス名を付与
+	}else{
+		if($('#pagetop').hasClass('UpMove')){//すでに#pagetopにUpMoveというクラス名がついていたら
+			$('#pagetop').removeClass('UpMove');//UpMoveというクラス名を除き
+			$('#pagetop').addClass('DownMove');//DownMoveというクラス名を#pagetopに付与
+		}
+	}
+}
+
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+});
+
+// ページが読み込まれたらすぐに動かしたい場合の記述
+$(window).on('load', function () {
+	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+});
+
+// #pagetopをクリックした際の設定
+$('#pagetop a').click(function () {
+    $('body,html').animate({
+        scrollTop: 0//ページトップまでスクロール
+    }, 900);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false;//リンク自体の無効化
+});
+
+
+$(".sp-btn").click(function () {//ボタンがクリックされたら
+  $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+    $(".sp-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+    $("#container").toggleClass('mainblur');//ぼかしたいエリアにmainblurクラスを付与
+});
+
+$("sp-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+    $(".sp-btn").removeClass('active');//ボタンの activeクラスを除去し
+    $(".sp-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去し
+    $("#container").removeClass('mainblur');//ぼかしているエリアのmainblurクラスを除去
+});

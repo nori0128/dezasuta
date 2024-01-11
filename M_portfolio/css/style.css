@@ -3,11 +3,10 @@
 .wrapper {
   background: #f2f2f2;
 }
-.nav {
+.pc-nav {
   background: rgba(154, 178, 142, 0.9);
 }
 .main {
-  display: flex;
   justify-content: flex-start;
   height: 100vh;
 }
@@ -16,4 +15,26 @@
   padding: 0;
   width: 100%;
   object-fit: cover;
+}
+.footer-copy {
+  color: #f2f2f2;
+}
+.sp-m-logo {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .main {
+    position: relative;
+  }
+  .sp-m-logo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    padding-top: 150px;
+  }
+  .sp-m-logo img {
+    width: 50%;
+  }
 }
